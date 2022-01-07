@@ -73,7 +73,7 @@ export default class PortfolioForm extends Component {
                 id: id,
                 name: name || "",
                 description: description || "",
-                category: category || "eCommerce",
+                category: category || "HTML/CSS",
                 position: position || "",
                 url: url || "",
                 editMode: true,
@@ -199,8 +199,8 @@ export default class PortfolioForm extends Component {
                     <input type="text" name="position" placeholder="Position" value={this.state.position} onChange={this.handleChange} />
                 
                     <select name="category" value={this.state.category} onChange={this.handleChange} className="select-element" >
-                        <option value="HTML/CSS">eCommerce</option>
-                        <option value="React">Scheduling</option>
+                        <option value="HTML/CSS">HTML/CSS</option>
+                        <option value="React">React</option>
                         <option value="Games">Games</option>
                     </select>
                 </div>
