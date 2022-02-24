@@ -1,7 +1,9 @@
 .homepage-wrapper {
     display: grid;
     grid-template-columns: 1fr;
-
+    margin-top: 83px;
+    background-color: black;
+    
     .filter-links {
         display: flex;
         justify-content: space-around;
@@ -9,5 +11,14 @@
         .btn {
             width: 100%;
         }
+    }
+}
+
+@media (max-width: 480px) {
+    .homepage-wrapper {
+        margin-top: 58px;
+    }
+    .filter-links {
+        margin-top: 0px;
     }
 }

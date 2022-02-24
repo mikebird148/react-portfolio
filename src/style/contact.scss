@@ -1,0 +1,42 @@
+.contactIcon {
+    font-size: 40px;
+    padding-right: 20px;
+}
+
+.fbIcon {
+    color: #1b74e4;
+}
+
+.ghIcon {
+    color: black;
+}
+
+.liIcon {
+    color: #0a66c2
+}
+
+@media (max-width: 480px) {
+    .content-page-wrapper {
+    .right-column {
+        .bullet-point-group {
+            margin-bottom: -30px;
+            display: block;
+        
+            .icon {
+                margin-left: 10px;
+                margin-right: -150px;
+            
+                .text {
+                    margin-left: -50px;
+                }
+            }
+        }
+        .fb-icon-a {
+            margin-left: 10px;
+        }
+        
+        .contact-divs {
+            margin-top: 35px;
+        } 
+    }}
+}

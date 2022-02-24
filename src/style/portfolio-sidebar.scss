@@ -31,6 +31,15 @@
                         color: $warning;
                     }
                 }
+
+                .edit-icon {
+                    font-size: 1.5em;
+                    transition: 0.5s ease-in-out;
+
+                    &:hover {
+                        color: $teal;
+                    }
+                }
             }
         }
     }

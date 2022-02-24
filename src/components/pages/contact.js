@@ -1,6 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import contactPagePicture from "../../../static/assets/images/seattle_contact_me.png";
+import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import contactPagePicture from "../../../static/assets/images/contact2.png";
+import "../../style/contact"
 
 export default function() {
         return (
@@ -13,7 +15,7 @@ export default function() {
                         backgroundPosition: "center"
                     }}
                 />
-                <div className="right-column">
+                <div className="right-column contact-info">
                     <div className="contact-bullet-points">
                         <div className="bullet-point-group">
                             <div className="icon">
@@ -40,6 +42,11 @@ export default function() {
                             <div className="text">
                                 Gold Bar, WA
                             </div>
+                        </div>
+                        <div className="contact-divs">
+                            <a className="fb-icon-a" target="_blank" href="https://www.facebook.com/mikebird148"><FontAwesomeIcon className="contactIcon fbIcon" icon={faFacebook} /></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/michael-bird-934a7577"><FontAwesomeIcon className="contactIcon liIcon" icon={faLinkedin} /></a>
+                            <a target="_blank" href="https://github.com/mikebird148"><FontAwesomeIcon className="contactIcon ghIcon" icon={faGithub} /></a>
                         </div>
                     </div>
                 </div>

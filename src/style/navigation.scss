@@ -2,6 +2,11 @@
     display: flex;
     justify-content: space-between;
     padding: 30px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 96%;
+    z-index: 2;
 
     .right-side {
         a {
@@ -11,7 +16,7 @@
             transition: 0.5s ease-in-out;
 
             &:hover {
-                color: $dark-teal;
+                color: red;
             }
         }
     }
@@ -33,7 +38,7 @@
             text-decoration: none;
             
             &:hover {
-                color: black;
+                color: red;
             }
         }
 
@@ -42,7 +47,19 @@
         }
         .nav-link-active {
             border-bottom: 1px solid black;
-            color: black;
+            color: $teal;
         }
+
+        .nav-link-active:hover {
+            color: $teal;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-wrapper {
+        padding: 6px;
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
